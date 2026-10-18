@@ -4,7 +4,7 @@ Can a molecular potential energy surface be reproduced using fewer electronic-st
 
 ## Overview
 
-I ran 2,366 UB3P86/def2-TZVP calculations of Au–CO₂⁺ and used them to test how well Gaussian Process Regression can reproduce a potential energy surface from a limited number of points. The calculation scans vary the Au–C separation (2.5–5.0 Å) and approach angle (0–90°), with the CO₂ geometry fixed. This gives a two-dimensional slice of the surface, rather than a full molecular potential.
+I ran 2,366 UB3P86/def2-TZVP single-point energy calculations of Au–CO₂⁺, and used them to test how well Gaussian Process Regression can reproduce a potential energy surface from a limited number of points. The calculation scans vary the Au–C separation (2.5–5.0 Å) and approach angle (0–90°), with the CO₂ geometry fixed. This gives a two-dimensional slice of the surface, rather than a full molecular potential.
 
 I compared random training-point selection with two alternatives: selecting geometries where the model is most uncertain, and combining uncertainty with a preference for points that are further apart. Predictions were evaluated against held-out DFT energies, alongside whether the fitted surface recovered the DFT minimum.
 
