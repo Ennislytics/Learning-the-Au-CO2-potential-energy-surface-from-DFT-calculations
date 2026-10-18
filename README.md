@@ -38,12 +38,6 @@ Random sampling recovered the minimum more consistently at smaller training size
 
 The study uses three starting selections and a held-out subset of the same regular grid, so it primarily tests interpolation. The fixed CO₂ geometry and DFT reference calculations also limit what can be inferred about full molecular potentials or spectroscopic accuracy.
 
-## Notebook
-
-The analysis is in [`Au_CO2_Gaussian_Process_PES.ipynb`](Au_CO2_Gaussian_Process_PES.ipynb). It covers Gaussian energy extraction, the reference PES, Gaussian Process fitting and comparison of the sampling strategies.
-
-To rerun it, place the `Au_CO2_Scans` folder beside the notebook. The original Gaussian logs are not included here; their release should be agreed with the research supervisor.
-
 ## Tools
 
 Python, NumPy, pandas, SciPy, scikit-learn and Matplotlib. DFT calculations were performed using Gaussian 16 (UB3P86/def2-TZVP).
